@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Settings – Clarivoice</title>
+<link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+<div class="header">
+  <div class="title">Settings</div>
+  <div class="actions">
+    <button id="toggleTheme" class="btn ghost">Toggle Theme</button>
+    <a href="login.html" class="btn ghost">Logout</a>
+  </div>
+</div>
+<div class="wrap">
+  <aside class="sidebar">
+    <div class="nav">
+      <a class="" href="tickets.html">Tickets</a>
+      <a class="" href="performance.html">Performance</a>
+      <a class="" href="agents.html">Agents</a>
+      <a class="" href="call-detail.html">Call Detail</a>
+      <a class="active" href="settings.html">Settings</a>
+    </div>
+  </aside>
+  <main class="content">
+<div class="pills">
+  <span class="pill active">Profile</span>
+  <span class="pill">Team</span>
+  <span class="pill">Queues</span>
+  <span class="pill">Integrations</span>
+  <span class="pill">Security</span>
+</div>
+<div class="card">
+  <div class="grid" style="grid-template-columns:1fr 1fr;gap:16px">
+    <div>
+      <div class="meta">Full name</div>
+      <input class="input" placeholder="Jane Doe"/>
+    </div>
+    <div>
+      <div class="meta">Email</div>
+      <input class="input" placeholder="jane@clarivoice.ai"/>
+    </div>
+    <div>
+      <div class="meta">Role</div>
+      <select class="select"><option>Agent</option><option>Supervisor</option><option>Admin</option></select>
+    </div>
+    <div>
+      <div class="meta">Timezone</div>
+      <select class="select"><option>UTC</option></select>
+    </div>
+  </div>
+  <div class="actions" style="margin-top:16px"><button class="btn">Save Changes</button></div>
+</div>
+</main>
+</div>
+<script src="assets/app.js"></script>
+</body></html>

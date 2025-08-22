@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Tickets – Clarivoice</title>
+<link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body>
+<div class="header">
+  <div class="title">Tickets</div>
+  <div class="actions">
+    <button id="toggleTheme" class="btn ghost">Toggle Theme</button>
+    <a href="login.html" class="btn ghost">Logout</a>
+  </div>
+</div>
+<div class="wrap">
+  <aside class="sidebar">
+    <div class="nav">
+      <a class="active" href="tickets.html">Tickets</a>
+      <a class="" href="performance.html">Performance</a>
+      <a class="" href="agents.html">Agents</a>
+      <a class="" href="call-detail.html">Call Detail</a>
+      <a class="" href="settings.html">Settings</a>
+    </div>
+  </aside>
+  <main class="content">
+<div class="topbar">
+  <div class="row" style="flex:1">
+    <input class="input" placeholder="Search tickets…"/>
+    <select class="select"><option>Status</option><option>Open</option><option>Pending</option><option>Resolved</option></select>
+    <select class="select"><option>Priority</option><option>Low</option><option>Medium</option><option>High</option><option>Critical</option></select>
+    <select class="select"><option>Agent</option><option>Jane</option><option>John</option><option>Aditi</option><option>Luis</option></select>
+  </div>
+  <button class="btn">New Ticket</button>
+</div>
+<div class="card">
+  <table class="table">
+    <thead><tr>
+      <th>ID</th><th>Subject</th><th>Customer</th><th>Priority</th><th>Status</th><th>Assigned</th><th>Updated</th>
+    </tr></thead>
+    <tbody>
+      <tr><td>#1042</td><td>Cannot login to portal</td><td>Acme Co</td><td><span class="chip warn">High</span></td><td><span class="chip">Open</span></td><td>Jane</td><td>2h ago</td></tr>
+      <tr><td>#1043</td><td>Billing error on invoice</td><td>BlueJet</td><td><span class="chip">Medium</span></td><td><span class="chip">Pending</span></td><td>Luis</td><td>3h ago</td></tr>
+      <tr><td>#1044</td><td>Phone IVR not routing</td><td>Northwind</td><td><span class="chip err">Critical</span></td><td><span class="chip warn">Escalated</span></td><td>Aditi</td><td>5m ago</td></tr>
+      <tr><td>#1045</td><td>Feature request</td><td>Globex</td><td><span class="chip">Low</span></td><td><span class="chip ok">Resolved</span></td><td>John</td><td>1d ago</td></tr>
+      <tr><td>#1046</td><td>App crash on call</td><td>Umbrella</td><td><span class="chip warn">High</span></td><td><span class="chip">Open</span></td><td>Jane</td><td>10m ago</td></tr>
+    </tbody>
+  </table>
+</div>
+<div class="row" style="justify-content:space-between;margin-top:12px">
+  <div class="meta">Showing 1–5 of 248</div>
+  <div class="actions"><button class="btn ghost">Prev</button><button class="btn">Next</button></div>
+</div>
+</main>
+</div>
+<script src="assets/app.js"></script>
+</body></html>
